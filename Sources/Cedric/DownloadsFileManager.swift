@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal protocol FileManagerType: class {
+internal protocol FileManagerType: AnyObject {
     func downloadsDirectory(create: Bool) throws -> URL
     func move(fromPath source: URL, toPath destination: URL, resource: DownloadResource) throws
     func cleanDownloadsDirectory() throws

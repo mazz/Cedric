@@ -369,7 +369,7 @@ class CedricDelegateProxy: CedricDelegate {
         didStartDownloadingResource?(resource)
     }
     
-    func cedric(_ cedric: Cedric, didUpdateStatusOfTask task: URLSessionDownloadTask, relatedToResource resource: DownloadResource) {
+    func cedric(_ cedric: Cedric, didUpdateStatusOfTask task: URLSessionDownloadTask, relatedToResource resource: DownloadResource, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         didDownloadBytes?(task.countOfBytesReceived, task.countOfBytesExpectedToReceive, resource)
     }
     
@@ -377,7 +377,7 @@ class CedricDelegateProxy: CedricDelegate {
         didCompleteWithError?(error, resource)
     }
     
-    func cedric(_ cedric: Cedric, didFinishDownloadingResource resource: DownloadResource, toFile file: DownloadedFile) {
+    func cedric(_ cedric: Cedric, didFinishDownloadingResource resource: DownloadResource, toFile file: DownloadedFile, finalDownloadURL: URL?) {
         didFinishDownloadingResource?(resource, file)
     }
     

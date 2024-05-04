@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol CedricDelegate: class {
+public protocol CedricDelegate: AnyObject {
     /// Invoked when download did start for paricular resource (download task is added to the queue)
     ///
     /// - Parameters:
@@ -23,7 +23,7 @@ public protocol CedricDelegate: class {
     ///   - cedric: Cedric object
     ///   - task: URLSessionDownloadTask for reading progress and state
     ///   - resource: Resource related with download
-    func cedric(_ cedric: Cedric, didUpdateStatusOfTask task: URLSessionDownloadTask, relatedToResource resource: DownloadResource)
+    func cedric(_ cedric: Cedric, didUpdateStatusOfTask task: URLSessionDownloadTask, relatedToResource resource: DownloadResource, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64)
     
     /// Invoked when particular resource downloading is finished
     ///
@@ -31,7 +31,7 @@ public protocol CedricDelegate: class {
     ///   - cedric: Cedric object
     ///   - resource: Resource related with download
     ///   - file: Object that contains relative path to file
-    func cedric(_ cedric: Cedric, didFinishDownloadingResource resource: DownloadResource, toFile file: DownloadedFile)
+    func cedric(_ cedric: Cedric, didFinishDownloadingResource resource: DownloadResource, toFile file: DownloadedFile, finalDownloadURL: URL?)
     
     /// Invoked when finished and maybe error occured during downloading particular resource
     ///

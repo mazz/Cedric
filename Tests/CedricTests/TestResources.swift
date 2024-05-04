@@ -13,12 +13,12 @@ import UIKit
 class TestResources {
     
     static let standardResources: [DownloadResource] = [
-        DownloadResource(id: "1", source: URL(string: "https://homepages.cae.wisc.edu/~ece533/images/airplane.png")!, destinationName: "airplane.png"),
-        DownloadResource(id: "2", source: URL(string: "https://homepages.cae.wisc.edu/~ece533/images/arctichare.png")!, destinationName: "arctichare.png"),
-        DownloadResource(id: "3", source: URL(string: "https://homepages.cae.wisc.edu/~ece533/images/baboon.png")!, destinationName: "baboon.png"),
-        DownloadResource(id: "4", source: URL(string: "https://homepages.cae.wisc.edu/~ece533/images/boat.png")!, destinationName: "boat.png"),
-        DownloadResource(id: "5", source: URL(string: "https://homepages.cae.wisc.edu/~ece533/images/cat.png")!, destinationName: "cat.png"),
-        DownloadResource(id: "6", source: URL(string: "https://homepages.cae.wisc.edu/~ece533/images/fruits.png")!, destinationName: "fruits.png")
+        DownloadResource(id: "1", source: URL(string: "https://download.samplelib.com/png/sample-boat-400x300.png")!, destinationName: "sample-boat-400x300.png"),
+        DownloadResource(id: "2", source: URL(string: "https://download.samplelib.com/png/sample-hut-400x300.png")!, destinationName: "sample-hut-400x300.png"),
+        DownloadResource(id: "3", source: URL(string: "https://download.samplelib.com/png/sample-bumblebee-400x300.png")!, destinationName: "sample-bumblebee-400x300.png"),
+        DownloadResource(id: "4", source: URL(string: "https://download.samplelib.com/png/sample-clouds2-400x300.png")!, destinationName: "sample-clouds2-400x300.png"),
+        DownloadResource(id: "5", source: URL(string: "https://download.samplelib.com/png/sample-red-400x300.png")!, destinationName: "sample-red-400x300.png"),
+        DownloadResource(id: "6", source: URL(string: "https://download.samplelib.com/png/sample-green-400x300.png")!, destinationName: "sample-green-400x300.png")
     ]
 }
 

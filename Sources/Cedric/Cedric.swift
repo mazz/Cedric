@@ -60,7 +60,7 @@ public class Cedric: NSObject {
             items.append(item)
         case .notDownloadIfExists:
             if let existing = existingFileIfAvailable(forExpectedFilename: resource.destinationName) {
-                delegates.invoke { $0.cedric(self, didFinishDownloadingResource: resource, toFile: existing) }
+                delegates.invoke { $0.cedric(self, didFinishDownloadingResource: resource, toFile: existing, finalDownloadURL: nil) }
                 item.cancel()
                 return
             } else {
@@ -204,7 +204,7 @@ extension Cedric: URLSessionTaskDelegate, URLSessionDownloadDelegate {
     public func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         guard let item = item(forDownloadTask: downloadTask) else { return }
         // single item progress report
-        delegates.invoke { $0.cedric(self, didUpdateStatusOfTask: downloadTask, relatedToResource: item.resource) }
+        delegates.invoke { $0.cedric(self, didUpdateStatusOfTask: downloadTask, relatedToResource: item.resource, totalBytesWritten: totalBytesWritten, totalBytesExpectedToWrite: totalBytesExpectedToWrite) }
 
         // maybe should consider some groupped resources progress reporting ...
     }
@@ -214,7 +214,8 @@ extension Cedric: URLSessionTaskDelegate, URLSessionDownloadDelegate {
         do {
             let newLocation = try item.moveToProperLocation(from: location)
             let file = try DownloadedFile(absolutePath: newLocation)
-            delegates.invoke { $0.cedric(self, didFinishDownloadingResource: item.resource, toFile: file) }
+            
+            delegates.invoke { $0.cedric(self, didFinishDownloadingResource: item.resource, toFile: file, finalDownloadURL: newLocation) }
         } catch let error {
             delegates.invoke { $0.cedric(self, didCompleteWithError: error, withTask: downloadTask, whenDownloadingResource: item.resource) }
         }

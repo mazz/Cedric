@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B84EF1D2BE697970063095F /* sample-bumblebee-400x300.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84EF172BE697950063095F /* sample-bumblebee-400x300.png */; };
+		7B84EF1E2BE697970063095F /* sample-clouds2-400x300.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84EF182BE697960063095F /* sample-clouds2-400x300.png */; };
+		7B84EF1F2BE697970063095F /* sample-green-400x300.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84EF192BE697960063095F /* sample-green-400x300.png */; };
+		7B84EF202BE697970063095F /* sample-red-400x300.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84EF1A2BE697960063095F /* sample-red-400x300.png */; };
+		7B84EF212BE697970063095F /* sample-hut-400x300.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84EF1B2BE697960063095F /* sample-hut-400x300.png */; };
+		7B84EF222BE697970063095F /* sample-boat-400x300.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B84EF1C2BE697970063095F /* sample-boat-400x300.png */; };
 		AD423AD820A37C00003C3E99 /* DownloadsFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD423AD720A37C00003C3E99 /* DownloadsFileManager.swift */; };
 		AD5EAD25209F6D9400AEB97E /* Cedric.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5EAD23209F6D9400AEB97E /* Cedric.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADA1DFA120A390C7000522A2 /* DownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA1DFA020A390C7000522A2 /* DownloadError.swift */; };
@@ -30,11 +36,6 @@
 		ADD61E8020A25A4000616745 /* LimitedOperationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD61E7F20A25A4000616745 /* LimitedOperationGroup.swift */; };
 		ADD61E8220A25A5F00616745 /* CedricConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD61E8120A25A5F00616745 /* CedricConfiguration.swift */; };
 		ADD61E8420A2D4B400616745 /* CedricDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD61E8320A2D4B400616745 /* CedricDelegate.swift */; };
-		E7B6C91B2B2C78BE000B0C39 /* baboon.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B6C9162B2C78BE000B0C39 /* baboon.png */; };
-		E7B6C91C2B2C78BE000B0C39 /* airplane.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B6C9172B2C78BE000B0C39 /* airplane.png */; };
-		E7B6C91D2B2C78BE000B0C39 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B6C9182B2C78BE000B0C39 /* cat.png */; };
-		E7B6C91E2B2C78BE000B0C39 /* fruits.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B6C9192B2C78BE000B0C39 /* fruits.png */; };
-		E7B6C91F2B2C78BE000B0C39 /* boat.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B6C91A2B2C78BE000B0C39 /* boat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B84EF172BE697950063095F /* sample-bumblebee-400x300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-bumblebee-400x300.png"; sourceTree = "<group>"; };
+		7B84EF182BE697960063095F /* sample-clouds2-400x300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-clouds2-400x300.png"; sourceTree = "<group>"; };
+		7B84EF192BE697960063095F /* sample-green-400x300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-green-400x300.png"; sourceTree = "<group>"; };
+		7B84EF1A2BE697960063095F /* sample-red-400x300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-red-400x300.png"; sourceTree = "<group>"; };
+		7B84EF1B2BE697960063095F /* sample-hut-400x300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-hut-400x300.png"; sourceTree = "<group>"; };
+		7B84EF1C2BE697970063095F /* sample-boat-400x300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-boat-400x300.png"; sourceTree = "<group>"; };
 		AD423AD720A37C00003C3E99 /* DownloadsFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsFileManager.swift; sourceTree = "<group>"; };
 		AD5EAD20209F6D9400AEB97E /* Cedric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cedric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5EAD23209F6D9400AEB97E /* Cedric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cedric.h; sourceTree = "<group>"; };
@@ -77,11 +84,6 @@
 		ADD61E8120A25A5F00616745 /* CedricConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CedricConfiguration.swift; sourceTree = "<group>"; };
 		ADD61E8320A2D4B400616745 /* CedricDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CedricDelegate.swift; sourceTree = "<group>"; };
 		E7B6C9082B2C7289000B0C39 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		E7B6C9162B2C78BE000B0C39 /* baboon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baboon.png; sourceTree = "<group>"; };
-		E7B6C9172B2C78BE000B0C39 /* airplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane.png; sourceTree = "<group>"; };
-		E7B6C9182B2C78BE000B0C39 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
-		E7B6C9192B2C78BE000B0C39 /* fruits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruits.png; sourceTree = "<group>"; };
-		E7B6C91A2B2C78BE000B0C39 /* boat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,11 +208,12 @@
 		E7B6C9152B2C78AE000B0C39 /* TestResources */ = {
 			isa = PBXGroup;
 			children = (
-				E7B6C9172B2C78BE000B0C39 /* airplane.png */,
-				E7B6C9162B2C78BE000B0C39 /* baboon.png */,
-				E7B6C91A2B2C78BE000B0C39 /* boat.png */,
-				E7B6C9182B2C78BE000B0C39 /* cat.png */,
-				E7B6C9192B2C78BE000B0C39 /* fruits.png */,
+				7B84EF1C2BE697970063095F /* sample-boat-400x300.png */,
+				7B84EF172BE697950063095F /* sample-bumblebee-400x300.png */,
+				7B84EF182BE697960063095F /* sample-clouds2-400x300.png */,
+				7B84EF192BE697960063095F /* sample-green-400x300.png */,
+				7B84EF1B2BE697960063095F /* sample-hut-400x300.png */,
+				7B84EF1A2BE697960063095F /* sample-red-400x300.png */,
 			);
 			path = TestResources;
 			sourceTree = "<group>";
@@ -347,11 +350,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B6C91C2B2C78BE000B0C39 /* airplane.png in Resources */,
-				E7B6C91B2B2C78BE000B0C39 /* baboon.png in Resources */,
-				E7B6C91D2B2C78BE000B0C39 /* cat.png in Resources */,
-				E7B6C91E2B2C78BE000B0C39 /* fruits.png in Resources */,
-				E7B6C91F2B2C78BE000B0C39 /* boat.png in Resources */,
+				7B84EF212BE697970063095F /* sample-hut-400x300.png in Resources */,
+				7B84EF1F2BE697970063095F /* sample-green-400x300.png in Resources */,
+				7B84EF1E2BE697970063095F /* sample-clouds2-400x300.png in Resources */,
+				7B84EF222BE697970063095F /* sample-boat-400x300.png in Resources */,
+				7B84EF1D2BE697970063095F /* sample-bumblebee-400x300.png in Resources */,
+				7B84EF202BE697970063095F /* sample-red-400x300.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +648,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = 49FU9E98SQ;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 49FU9E98SQ;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 49FU9E98SQ;
 				INFOPLIST_FILE = Tests/CedricTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -663,6 +670,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=appletvos*]" = 49FU9E98SQ;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 49FU9E98SQ;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 49FU9E98SQ;
 				INFOPLIST_FILE = Tests/CedricTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -19,6 +19,18 @@ public struct DownloadedFile {
             .appendingPathComponent(relativePath)
     }
     
+    public func existsAtExpectedLocation() -> Bool {
+        do {
+            let url = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+                .appendingPathComponent(relativePath)
+            let exists = FileManager.default.fileExists(atPath: url.path)
+            return exists
+        } catch {
+            return false
+        }
+        return false
+    }
+    
     internal init(absolutePath path: URL) throws {
         let documentsUrl = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
         relativePath = String(path.path.replacingOccurrences(of: documentsUrl.path, with: "").dropFirst())
